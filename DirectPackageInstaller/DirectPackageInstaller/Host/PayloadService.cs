@@ -197,7 +197,7 @@ namespace DirectPackageInstaller.Host
                 {
                     ServiceSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-                    ServiceSocket.Bind(new IPEndPoint(IPAddress.Any, 0));
+                    ServiceSocket.Bind(new IPEndPoint(IPAddress.Any, 9090));
                     ServiceSocket.Listen();
                 }
 
